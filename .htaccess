@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^/subdirectoryname1/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/subdirectoryname2/(.*)$ [OR]
+RewriteRule ^.*$ - [L]
+</IfModule>
